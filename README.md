@@ -11,7 +11,7 @@ Schematicファイルを自動でブロックID毎に分割, 数が多い順に�
 
 ## Licence
 
-[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
+MIT
 
 ## Author
 
