@@ -12,15 +12,13 @@ $ pip install numpy
 ```bash
 $ pip install nbtlib
 ```
- - opencv-python
-```bash
-$ pip install opencv-python
-```
 
 ## Usage
-```bash
-$ python PosterGenerator.py example.exe
-```
+1. schematic.pyおよびSchematic.batと目的のSchematicファイル*.schematicを同じフォルダに置く.  
+2. SchematicファイルをSchematic.batにドラッグ&ドロップ. 
+3. 同じフォルダに変換後のファイル*_rebuild.schematicが生成される. 
+  
+※高さ1以外のファイルは使用不可. 
 
 ## Licence
 
