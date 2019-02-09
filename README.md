@@ -2,6 +2,17 @@
 Minecraftにおけるポスター制作補助用プログラム.  
 Schematicファイルを自動でブロックID毎に分割, 数が多い順に並べ替えて積層する. 
 
+## Requires  
+必須モジュール  
+ - [Numpy](https://github.com/numpy/numpy)
+```bash
+$ pip install numpy
+```
+ - [NBTlib](https://github.com/vberlier/nbtlib)  
+```bash
+$ pip install nbtlib
+```
+
 ## Usage
 1. schematic.pyおよびSchematic.batと目的のSchematicファイル*.schematicを同じフォルダに置く.  
 2. SchematicファイルをSchematic.batにドラッグ&ドロップ. 
