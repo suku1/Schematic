@@ -11,8 +11,6 @@ class schematic:
         if filename != None:
             self.load_data(filename)
 
-        self.sortmode = 0
-
     def load_data(self, filename=None):
         if filename == None:
             if self.filename == None:
@@ -57,10 +55,7 @@ class schematic:
             self.count.append({'Name': key, 'Num': val})
 
     def sort(self):
-        if self.sortmode == 0:
-            self.count.sort(key=lambda x: -x['Num'])
-        elif self.sortmode == 1:
-            self.count.sort(key=lambda x: x['Num'])
+        self.count.sort(key=lambda x: -x['Num'])
 
     def rebuild(self):
         self.block_re = []
@@ -88,6 +83,7 @@ class schematic:
         self.rawdata.root['Blocks'] = tag.ByteArray(self.block_re)
         self.rawdata.root['Data'] = tag.ByteArray(self.data_re)
         self.rawdata.root['Height'] = tag.Short(len(self.count) + 1)
+
 
 def main():
     name = sys.argv[1]
